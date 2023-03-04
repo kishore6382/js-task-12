@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>js task-9</title>
+  </head>
+<body>
+  <script>
+                	
+			const employees = [
+								 { name: "David Carlson", age: 30 },
+								 { name: "John Cena", age: 34 },
+								 { name: "Mike Sheridan", age: 25 },
+								 { name: "John Carte", age: 50 }
+								];
+			const employee = employees.find(function (user) {
+				  return user.name.indexOf('Mike')>-1;
+				});
+	        console.log(employee);
+			document.write("<br>",	JSON.stringify(employee));
+			const employees1 = [
+						  { name: 'David Carlson', age: 30 },
+						  { name: 'John Cena', age: 34 },
+						  { name: 'Mike Sheridan', age: 25 },
+						  { name: 'John Carte', age: 50 }
+						];
+
+						const employ = employees.findIndex(function (employee) {
+						  return employee.name.indexOf('Mike') > -1;
+						});
+
+			console.log(employ);
+			document.write("<br>",employ);
+			
+  </script>
+  </body>
+  </html>
